@@ -33,7 +33,9 @@ shasum whisper
 
 ### Model parameters (weights) 
 
-For the model to run you need the model parameters or weights. These can be donwloaded from the [Huggin Face Whisper.cpp project](https://huggingface.co/ggerganov/whisper.cpp). Check the checksum values using `shasum` and put these weights into a properly named directory. You will need the location/path of these weights when executing the script.
+For the model to run you need the model parameters or weights. These can be donwloaded from the [Huggin Face Whisper.cpp project](https://huggingface.co/ggerganov/whisper.cpp/tree/main). Check the [checksum values](https://huggingface.co/ggerganov/whisper.cpp) using `shasum` and put these weights into a properly named directory. You will need the location/path of these weights when executing the script.
+
+Download the base model (gglm-base.bin) which gives fair performance, while the medium model (gglm-medium.bin) might perform better in certain circumstances and or languages.
 
 ### Whisper Subs
 
