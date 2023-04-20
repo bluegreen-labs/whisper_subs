@@ -19,16 +19,30 @@ in the git project directory run
 ```bash
 # build the project
 make
+
+# rename main to whisper
+# and copy to local bin folder
+cp main /home/xy/bin/whisper
+```
+Make sure that the `home/xy/bin` or any other destination folder is searched for executables. Alternatively, copy the pre-compiled executable into the destination folder searched for executables. The binary is compiled on Ubuntu/Pop OS 22.04.
+
+```bash
+shasum whisper
+2fc3f7b877ebc4c5eccbac4fc58d3c42112aac1d  whisper
 ```
 
 ### Model parameters (weights) 
 
-https://huggingface.co/ggerganov/whisper.cpp
+For the model to run you need the model parameters or weights. These can be donwloaded from the [Huggin Face Whisper.cpp project](https://huggingface.co/ggerganov/whisper.cpp). Check the checksum values using `shasum` and put these weights into a properly named directory. You will need the location/path of these weights when executing the script.
+
+### Whisper Subs
+
+To install the Whisper Subs script clone, or copy the shell script in this repository.
 
 ## Use
 
 ```bash
-whisper_subs.sh -v /your/video/file.mp4 -l "en" -m /models/ggml-base.bin
+whisper_subs.sh -v /home/xy/Downloads/file.mp4 -l "en" -m /models/ggml-base.bin
 ```
 
 
