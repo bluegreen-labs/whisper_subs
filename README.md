@@ -24,7 +24,15 @@ make
 # and copy to local bin folder
 cp main /home/xy/bin/whisper
 ```
-Make sure that the `home/xy/bin` or any other destination folder is searched for executables. Alternatively, copy the pre-compiled executable into the destination folder searched for executables. The binary is compiled on Ubuntu/Pop OS 22.04.
+Make sure that the `home/xy/bin` or any other destination folder is searched for executables. 
+
+Alternatively, copy the pre-compiled executable `whisper`, and the script, in this project into the destination folder. The binary is compiled on Ubuntu/Pop OS 22.04.
+
+```bash
+mv whisper* /home/xy/bin/
+```
+
+To check the validity of the binary shasum values are provided:
 
 ```bash
 shasum whisper
