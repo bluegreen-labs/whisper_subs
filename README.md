@@ -67,4 +67,12 @@ whisper_subs.sh -v "prefix_*.mp4" -l "en" -m /models/ggml-base.bin
 
 The resulting `srt` files will be for the format `{*.mp4}.{language}.srt`
 
+### Burning subtitles
+
+The `srt` files can be used as subtitles in most modern video players. However, if you need hard coded subtitles you can burn in these `srt` subtitle files into a video file using the following `ffmpeg` command:
+
+```bash
+ffmpeg -i movie.mp4 -vf subtitles=subtitles.srt -c:a copy output_file.m4v
+```
+
 
