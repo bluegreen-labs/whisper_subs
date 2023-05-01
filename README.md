@@ -51,8 +51,20 @@ To install the Whisper Subs script clone, or copy the shell script in this repos
 
 ## Use
 
+The use case is aimed at running the routine on a batch of files in a particular directory. To run the script, move into the desired directory and call the script, where:
+
+- -v specifies the video file as regular expression wildcard, quoted (e.g. "*.mp4" will process all mp4 files)
+- -l specifies the language, quoted (e.g. "en" for English, "fr" for French)
+- -m specifies the model to use as a path to a model file 
+
 ```bash
-whisper_subs.sh -v /home/xy/Downloads/file.mp4 -l "en" -m /models/ggml-base.bin
+# move into your video directory
+cd /home/xyz/Videos
+
+# start subtitle routine
+whisper_subs.sh -v "prefix_*.mp4" -l "en" -m /models/ggml-base.bin
 ```
+
+The resulting `srt` files will be for the format `{*.mp4}.{language}.srt`
 
 
