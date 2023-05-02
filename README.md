@@ -38,6 +38,12 @@ To check the validity of the binary shasum values are provided:
 shasum whisper
 2fc3f7b877ebc4c5eccbac4fc58d3c42112aac1d  whisper
 ```
+Make the binary executable.
+
+```bash
+# make the binary executable
+chmod +x /home/xy/bin/whisper
+```
 
 ### Model parameters (weights) 
 
