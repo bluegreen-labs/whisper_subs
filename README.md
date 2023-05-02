@@ -53,7 +53,7 @@ Download the base model (gglm-base.bin) which gives fair performance, while the 
 
 ### Whisper Subs
 
-To install the Whisper Subs script clone, or copy the shell script in this repository.
+To install the Whisper Subs script clone, or copy the shell script in this repository to the `/home/xy/bin/` directory as before (and make executable with `chmod +x`).
 
 ## Use
 
